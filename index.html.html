@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b3a7a">
+<title>SAWOO 사우고등학교 2027 입학안내</title>
+<style>
+:root{--bg:#f2f5fa;--card:#fff;--ink:#16223b;--mute:#62708a;--navy:#1b3a7a;--acc:#1f4e9c;--tint:#e6eefb;--teal:#00a6a6;--pink:#e5398a;--line:#dde4f0;box-sizing:border-box;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1424;--card:#16203a;--ink:#e9eefb;--mute:#9aa8c7;--navy:#0f1d3f;--acc:#7fa8f0;--tint:#1f2c4d;--line:#27345a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1424;--card:#16203a;--ink:#e9eefb;--mute:#9aa8c7;--navy:#0f1d3f;--acc:#7fa8f0;--tint:#1f2c4d;--line:#27345a;color-scheme:dark}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.6;padding-top:env(safe-area-inset-top,0px)}
+.app{max-width:480px;margin:0 auto;min-height:100vh;padding-bottom:90px}
+.top{background:linear-gradient(135deg,var(--navy),#2a5bb5);color:#fff;padding:18px 18px 20px;border-radius:0 0 26px 26px}
+.top small{letter-spacing:.14em;font-size:11px;opacity:.8}
+.top h1{margin:2px 0 0;font-size:22px}
+.top h1 b{color:#7ee0e0}
+.pad{padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px}
+h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+.row{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px dashed var(--line);font-size:14px}
+.row:first-of-type{border-top:0}.row span:first-child{color:var(--mute)}.row b{text-align:right}
+.hl{background:var(--navy);color:#fff;border-radius:14px;padding:14px;margin-bottom:12px}
+.hl p{margin:2px 0}.hl .big{font-size:18px;font-weight:800;color:#7ee0e0}
+.go{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.go button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:14px;padding:14px 10px;font-size:14px;font-weight:700;cursor:pointer}
+.go i{display:block;font-style:normal;font-size:24px}
+.pills{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px}
+.pill{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 13px;border-radius:99px;font-size:13px;cursor:pointer}
+.pill.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.search{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font-size:15px;margin-bottom:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:14px;font-weight:700;font-size:15px;display:flex;gap:10px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q";flex:none;width:26px;height:26px;border-radius:50%;background:var(--tint);color:var(--acc);display:grid;place-items:center;font-size:13px;font-weight:800}
+.bro summary::before{content:"●";font-size:10px}
+details[open] summary{color:var(--acc)}
+.ans{padding:0 14px 14px 50px;font-size:14.5px;white-space:pre-line}
+.bro .ans{padding:0 16px 14px 16px;white-space:normal}
+.ans ul{margin:4px 0 10px;padding-left:18px}.ans h4{margin:12px 0 2px;color:var(--acc);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{background:var(--tint);color:var(--acc);border-radius:99px;padding:4px 11px;font-size:13px}
+.nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+.nav div{display:flex;width:100%;max-width:480px}
+.nav button{flex:1;border:0;background:none;color:var(--mute);padding:99px 0 8px;font-size:12px;cursor:pointer}
+.nav button i{display:block;font-style:normal;font-size:20px}.nav button.on{color:var(--acc);font-weight:800}
+.tab{display:none}.tab.on{display:block}
+.foot{text-align:center;color:var(--mute);font-size:12px;padding:6px 16px}
+a{color:var(--acc)}
+.gs{margin-top:12px;display:flex;gap:8px}.gs input{flex:1;min-width:0;border:0;border-radius:12px;padding:12px 14px;font-size:15px;background:#fff;color:#16223b}.gs button{border:0;border-radius:12px;background:#00a6a6;color:#fff;font-weight:800;padding:0 14px;cursor:pointer}
+.ex{display:flex;gap:6px;overflow-x:auto;margin-top:8px}.ex button{flex:none;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.12);color:#fff;border-radius:99px;padding:4px 11px;font-size:12px;cursor:pointer}
+.srch .tab{display:none!important}.res{cursor:pointer}.res small{color:var(--acc);font-weight:700}.res b{display:block;margin:2px 0}.res p{margin:4px 0;font-size:14px;white-space:pre-line}.res span{font-size:13px;color:var(--acc);font-weight:700}
+</style></head><body><div class="app">
+<div class="top"><small>SAWOO HIGH SCHOOL</small><h1>2027학년도 <b>사우고등학교</b></h1><small>꿈과 도전으로 모두가 함께 성장하는 학교</small>
+<div class="gs"><input id="gs" placeholder="궁금한 걸 물어보세요 (예: 야자는 꼭 해야 해요?)" enterkeyhint="search"><button id="gx">지우기</button></div>
+<div class="ex"><button>2028 대입 달라지는 점</button><button>입학설명회 언제예요?</button><button>동아리 뭐 있어요?</button><button>대학생 멘토링</button><button>선택과목</button><button>일본 교류</button></div></div>
+<div class="pad">
+<div id="gr"></div>
+<section class="tab on" id="t0">
+<div class="hl"><p>📢 2027학년도 입학설명회</p><p class="big">2026.11.25.(수) 18:00</p><p>사우고등학교 강당 · 관내 중3 학부모 및 학생</p></div>
+<div class="card"><h2>2027학년도 고입전형 일정</h2>
+<div class="row"><span>원서접수</span><b>2026.12.04(금) ~ 12.10(목) 17:00까지</b></div>
+<div class="row"><span>전형기간</span><b>2026.12.11(금)</b></div>
+<div class="row"><span>합격자 발표</span><b>2026.12.14(월) 이내</b></div></div>
+<div class="go"><button data-t="1"><i>💬</i>입학 Q&amp;A</button><button data-t="2"><i>📘</i>학교 브로셔</button><button data-t="3"><i>🎯</i>동아리 50</button><button data-t="1" data-c="학교생활"><i>🤖</i>AI·국제교류</button></div>
+<div class="card" style="margin-top:12px"><h2>학교 정보</h2>
+<div class="row"><span>주소</span><b>경기 김포시 김포대로 824 (10111)</b></div>
+<div class="row"><span>전화</span><b><a href="tel:0319853421">031-985-3421</a></b></div>
+<div class="row"><span>팩스</span><b>031-997-2397</b></div>
+<div class="row"><span>홈페이지</span><b>sawoo-h.gpoe.kr</b></div></div>
+</section>
+<section class="tab" id="t1">
+<input class="search" id="s" placeholder="궁금한 키워드 검색 (예: 야자, 동아리)">
+<div class="pills" id="pills"></div><div id="qa"></div></section>
+<section class="tab bro" id="t2"><div id="br"></div></section>
+<section class="tab" id="t3"><div class="card"><h2>2026학년도 동아리 50개</h2><p style="font-size:13px;color:var(--mute);margin-top:0">학생이 직접 기획하고 이끄는 학생 주도형 동아리 (1·2학년 / 3학년은 별도 운영)</p><div class="pills" id="cp" style="flex-wrap:wrap"></div><div class="chips" id="cl"></div></div></section>
+<p class="foot">© 2027학년도 SAWOO HIGH SCHOOL 홍보 브로셔 기반 안내</p>
+</div></div>
+<div class="nav"><div id="nav"></div></div>
+<script>
+const QA=[
+["입학·학업","내신이 160점인데 가능할까요? 전년도 커트라인을 알 수 있을까요?","지원하는 학생에 따라 달라질 수 있으므로 중학교 담임 선생님과 상담해 보시고 지원하시면 가능할 수도 있습니다."],
+["입학·학업","출신 중학교 간 성적은 어떤가요?","출신 중학교보다는 자기주도학습 역량과 학업 준비도에 따라 내신·수능 성적의 향상도가 달라집니다. 중학교 내신이 고등학교 성적을 좌우하진 않으니, 꾸준히 자기주도학습과 학교생활에 충실하면 도움이 됩니다."],
+["입학·학업","진로가 이공계열인데 사우고에 와도 괜찮을까요?","수학·과학·정보 프로그램이 많고 소인수 강좌와 온라인 교육과정이 활발히 운영됩니다. 고급화학, 고급물리 같은 심화 과목은 온라인 교육과정으로 이공계 진학을 준비할 수 있습니다."],
+["입학·학업","문과 계열 아이들에게도 특화된 프로그램이 있나요?","인문사회 프로그램, 진로 프로그램, 학생 주도형 프로그램이 있고 온라인 교육과정 참여율이 높은 편입니다. 로스쿨 등 문과 관련 심화 과목도 온라인 교육과정으로 준비할 수 있습니다."],
+["입학·학업","입학 전 겨울방학을 어떻게 보내야 할까요?","자기주도학습 습관과 독서 활동을 추천합니다.\n① 국영수 학습계획을 세우고 혼자 집중하는 시간을 확보하세요.\n② 책·신문·자료 등 다양하게 읽기(하루 10분도 좋아요). 수행평가와 진로 탐색에 도움이 됩니다.\n③ 수학은 개념을 탄탄히 하고, 답지를 보기보다 스스로 문제를 해결하는 과정이 중요합니다."],
+["입학·학업","자기주도학습만으로 고등학교 공부를 따라갈 수 있을까요?","학원에만 전적으로 의존하면 어려울 수 있고, 스스로 공부하고 검토하는 시간이 필요합니다. 기본기가 부족한 과목만 골라 학원을 병행하는 것이 좋습니다."],
+["입학·학업","우리 아이가 00학과를 가려고 해요. 어떤 과목을 들어야 하나요?","학과별로 '권장과목' 또는 '핵심 권장과목'이 있습니다. 해당 학과 교육과정의 기초가 되는 과목을 이수하면 진학뿐 아니라 대학 공부에도 도움이 됩니다."],
+["진학","사우고는 수시보다 정시로 진학을 많이 하나요?","수시와 정시를 모두 준비할 수 있는 학교입니다. 2025학년도 1학년부터 내신이 5등급제로 바뀌어 수능 최저도 중요해집니다. 교과 전형 합격이 높은 것은 학생들이 수능 최저를 충족했다는 뜻이며, 정시 상위권 대학 합격도 늘고 있습니다."],
+["진학","수시 '수능 최저 학력 기준'이 무엇인가요?","대학이 정한 최저 수능 등급 기준을 통과해야 합격 선발 대상이 된다는 뜻입니다.\n예) 국영수탐 중 2개 영역 합 4\nA학생: 내신 1.8, 수능 모두 3등급 → 최저 미충족, 불합격\nB학생: 내신 2.3, 국어·수학 2등급 → 최저 충족, 선발 평가 대상"],
+["진학","진로를 꼭 빨리 정해야 진학 준비가 수월한가요?","꼭 그렇진 않습니다. 다수의 학생이 진로를 고민하며 꿈도 바뀌므로 압박을 가질 필요는 없습니다. 다만 1학년 때 교과·비교과 활동으로 큰 계열부터 적성을 찾고 구체화하길 권하며, 어려우면 자율전공 진학도 방법입니다."],
+["학교생활","야자(드림하이)는 꼭 해야 하나요?","희망하는 학생을 대상으로 아침, 저녁에 운영됩니다."],
+["학교생활","드림캠프 프로그램은 어떻게 진행되나요?","희망 학생으로 운영됩니다.\n1학년: 북클럽 독서, 진로 탐구 프로젝트(앱 기획·개발)\n2학년: 진로 이슈 토론, 모의 창업 프로젝트\n3학년: 꿈책향연, 모의 면접"],
+["학교생활","합격하면 예비소집일은 언제인가요?","중학교로 안내됩니다. 안내를 확인하시고 예비소집일에 오시면 됩니다."],
+["학교생활","동아리는 어떻게 구성되어 있나요?","50개의 동아리가 있으며 인문·과학·예체능·진로 등 다양합니다. 2학년 부장·차장이 직접 활동을 이끄는 학생 주도형 동아리가 많습니다."],
+["학교생활","국제교류 프로그램은 뭔가요?","1학년 희망자를 선발해 일본 오카야마 소자미나미고를 방문합니다. 공동 주제를 정해 온라인으로 탐구를 공유하고, 방문해 결과를 나누며 세계시민 역량을 키웁니다."],
+["학교생활","AI 중점학교라는 건 뭔가요?","2026년 AI 중점학교를 운영합니다. 전교생 AI 체험 박람회(AI 로봇암, 디지털 헬스케어 등), AI·SW 동아리와 외부 강사 체험(생성형 AI, 머신러닝, 피지컬 컴퓨팅), 1학년 AI 윤리 특강이 진행됩니다."],
+["대입·교육과정","2028 대입은 어떻게 달라지나요? (서울대 기준)","설명회 자료의 2028학년도 서울대 전형(안) 기준입니다.\n· 수능: 표준점수 → 등급·백분위 활용 예상\n· 수능 최저: 존재 → 폐지(지역균형 등)\n· 지역균형 추천: 학교당 2명 → 3명 이내\n· 수시 면접: SNU 역량평가 면접 도입(지역균형·일반 모두)\n· 정시: 교과역량평가 40% 반영\n· 정시 일반전형 1단계: 2배수 → 3배수\n전망: 일반고 학생의 지원 기회가 늘고, 수능 영향력이 줄며 고교 교육과 면접이 중요해집니다."],
+["대입·교육과정","2028 서울대 수시모집은 어떻게 선발하나요?","수시는 모두 학생부종합전형으로, 1단계 서류평가 후 2단계에서 서류평가+면접을 봅니다(안).\n· 지역균형: 1단계 3배수 → 2단계 1단계 성적 70점 + 면접 30점\n· 일반전형: 1단계 2배수 → 2단계 1단계 성적 100점 + 면접 100점\n· 기회균형(사회통합): 1단계 2배수 → 1단계 성적 70점 + 면접 30점\n면접은 정답 유무보다 사고 과정을 평가하는 SNU 역량평가 면접으로, 분석적 주제 토론(인문·사회), 심층적 문제 해결(자연과학·사범대), 융합적 과제 수행(공과대·첨단융합) 방식이 도입됩니다."],
+["대입·교육과정","2028 서울대 정시모집은 어떻게 선발하나요?","정시는 수능 + 교과역량평가로 선발합니다(안).\n· 지역균형: 수능 60점 + 교과역량평가 40점(일반고 2명 이내 추천)\n· 일반전형: 1단계 수능 100%(3배수) → 2단계 수능 60점 + 교과역량평가 40점\n· 기회균형(농어촌·저소득): 수능 최저 폐지, 수능 60점 + 교과역량평가 40점\n교과역량평가 배점이 20점에서 40점으로 늘어 학교 내신·학생부 기록의 영향력이 커집니다."],
+["대입·교육과정","대입 전형에는 어떤 종류가 있나요?","표준 대입전형은 크게 5가지입니다.\n· 학생부교과: 교과성적 + 수능최저. 교과성적 50% 이상 반영, 100%로 뽑는 대학이 많으며 면접·출결·봉사를 반영하기도 합니다.\n· 학생부종합: 교과성적 + 교과활동(+ 일부 수능최저). 학업·진로·공동체 역량을 종합 평가하며 서류 100% 또는 서류 후 면접.\n· 논술: 교과역량 + 논술역량 + 수능최저. 수도권 대학에서 많이 실시.\n· 실기/실적: 주로 예체능. 실기는 실기고사, 실적은 수상·어학 성적 등 반영.\n· 수능: 수능성적 + 교과역량(백분위·표준점수 활용)."],
+["대입·교육과정","고교학점제로 무엇이 달라지나요?","① 등급·출석: 전 과목 성취도 5단계, 석차등급 5등급제. 매시간 교과 선생님이 출석을 체크하므로 성실한 학교생활이 중요합니다.\n② 진로선택: 학생 맞춤형 다양한 과목이 개설되고 진로와 연계해 수강 신청을 합니다.\n③ 최소성취 보장: 이수 기준은 출석 2/3 이상 + 학업성취율 40% 이상이며, 미이수 시 보충 프로그램으로 최소성취수준을 지도합니다.\n수능 과목은 4단위로 충분한 시수를 확보합니다."],
+["대입·교육과정","성적표(학생부)에는 어떻게 기재되나요?","원점수와 과목 평균이 기재되고 표준편차는 기재되지 않아 특목고와 일반고를 구분하기 어렵습니다. 학업성취율 40% 미만이어도 최소성취수준 보장지도를 이수하면 성취도란에 ‘E’가 기재되며 보충학습 여부는 기재되지 않습니다. 3학년 2학기 융합선택과목(사회·과학)은 석차등급 없이 성취도만 기재하고, 공동교육과정(5명 이내 소인수)도 석차등급을 산출하지 않습니다."],
+["대입·교육과정","2026 대입 사우고 대학 합격 현황은 어떤가요?","설명회 자료 기준 주요 합격 현황입니다.\n의대 2 / 연세대 2 / 고려대 3 / 성균관대 7 / 서강대 4 / 한양대 5 / 중앙대 8 / 경희대 6 / 한국외대 4 / 이화여대 6 / 서울시립대 1 / 건국대 7 / 동국대 5 / 홍익대 10 / 숭실대 10 / 국민대 6 / 숙명여대 5 / 인하대 14 / 인천대 13 / 아주대 3 / 가천대 4 / 서울과기대 2 / UNIST 1 / DGIST 2 외 다수\n지역거점 국립대 46명, 지방 사립대 70명."],
+["대입·교육과정","AI 시대에는 어떤 직업이 생기고 사라지나요?","세계경제포럼(2023) ‘직업의 미래’ 조사 기준입니다.\n창출: AI·머신러닝 전문가, 지속가능성 전문가, 비즈니스 인텔리전스 전문가, 정보보안 분석가, 핀테크 엔지니어, 데이터 분석가·과학자, 로보틱스 엔지니어, 빅데이터 전문가, 농업 장비 운영자\n감소: 통계·재정·보험 사무원, 입법자·공무원, 가전제품 설치·수리공, 회계·부기·급여 사무원, 자료기록·재고관리 사무원, 행정·집행 비서, 데이터 입력 사무원, 출납원·매표원, 우체국·은행 사무원"],
+["학교생활","폰프리 프로그램은 무엇인가요?","스마트폰 대신 친구와 눈을 맞추며 함께하는 폰프리 3대 실천(RAS)입니다.\nR(독서·성찰): 숨은 우리말 찾기, 사우 골든벨, 우리말 순환 챌린지, 다문화 삼행시 대회\nA(예술·창의): 벚꽃 사진전, 학교 마스코트 공모전, 사우고 릴스대회, 사우 교복 사진관, 소원 트리\nS(신체·소통): 사이좋은 사우 스티커, 우리반 칭찬 아카이브, 응원 우체통"]];
+const BR=[
+["🌱 교육과정 특색","<h4>김포 한울타리 교육과정</h4><ul><li>학생의 선택과 성장을 지원하는 미래형 교육과정</li><li>질문 있는 수업, 교과 간 융합수업</li><li>학교주도 활동 시간(SLAT), 디지털 진로·진학 포트폴리오</li><li>공동교육과정·거점교: 실용경제, 고급수학, 인간과 심리 등</li></ul><h4>경기도교육청 지정 AI 중점학교</h4><ul><li>단계별 AI·정보 교육과정, AI·로봇·SW 동아리와 해커톤</li><li>문제해결 프로그래밍 챌린지, 교과 연계 AI 수업 확대</li></ul>"],
+["📚 학생중심 선택형 교육과정","<h4>1학년</h4><ul><li>공통국어·수학·영어, 한국사, 통합사회·과학, 과학탐구실험, 체육, 음악/미술, 정보/한문</li></ul><h4>2·3학년 교과영역 간 선택(택3~4)</h4><ul><li>역사·지리·사회·윤리·과학·국어·영어·스페인어·수학·음악·미술 등 다양한 과목</li><li>예: 인공지능 수학, 기하, 미적분Ⅱ, 심화 수학, 물리·화학·생명·지구과학</li></ul><h4>생활교양(택1)</h4><ul><li>기술가정, 정보(데이터 과학·AI), 중국어, 일본어</li></ul><h4>공동교육과정·소인수과목</h4><ul><li>고급 대수·물리·화학·생명과학, 경제 수학, 인공지능 수학, 국제 정치, 마케팅과 광고 등</li><li>2학년 ‘리더스’가 1학년에게 과목을 소개하고 질의응답을 진행</li></ul>"],
+["📖 교과 독서 · 생각의 힘","<ul><li>영어: 심화영어 비평 프로젝트, 매체 이슈 분석 에세이, 독서 기반 진로 연계 프로젝트</li><li>국어: 질문으로 서평 쓰기 → 구술평가 → 소설 창작까지 이어지는 질문 중심 수행</li><li>사회 문제를 독서로 탐구하고 글쓰기로 해결 방안을 모색</li><li>북돋움·책이음, 독서 피크닉, 저자 특강, 독도·이어도 해양주권교육</li></ul>"],
+["🔬 과학 · 수학 창의융합","<ul><li>MBL 심화 실험 캠프(물리·화학), 생명과학 심화 실험 캠프(미생물·PCR)</li><li>깊이봄 심화탐구 프로젝트(2학년 모둠 실험·보고서·발표)</li><li>탄소중립 독서토론·실천 프로젝트, 별 헤는 가을밤 천체관측</li><li>수학 지식 나눔 특강(AI 얼굴 인식 로봇), 수학 런치 체험</li><li>과학탐구 동아리: 뉴런, 피케, 바쎄, 과학의 품격, 메디믹스, 엔지니어랩</li></ul>"],
+["🚀 사우 DREAM CAMP","<ul><li><b>1학년</b> 진로 연계 창의융합 앱 기획·개발 프로젝트</li><li><b>2학년</b> 모의창업 프로젝트(사업계획서, 시제품, 모의 펀딩)</li><li><b>3학년</b> 꿈책향연(팀별 독서토론), 모의면접(교사-학생, 학생-학생)</li></ul>"],
+["🌏 국제교류 프로그램","<ul><li>일본 오카야마현립 소자미나미고와 MOU 체결</li><li>온라인 주제 탐구 → 본교 방문·교육 교류 → 일본 현지 교류(히로시마 평화 탐방, 오카야마대 유학생 멘토링)</li><li>차별점: 지속형 교류 · 학생 주도 탐구 · 상호 방문 · 지역·대학 연계</li></ul>"],
+["🎨 학생자치 · 문화 · 통합교육","<ul><li>학생자치회 리더십 캠프, 대의원회, 폰프리 실천학교</li><li>미술 체험, 런치콘서트, 가을 음악회, 스포츠클럽 축제, 오아시스 아침 운동</li><li>통합교육 지원실: 코딩, 제과제빵, 바리스타, 사서보조 등 ‘나’다운 성장 지원</li></ul>"],
+["🧭 진로진학 10가지 프로그램","<ul><li>사우 드림캠프 · 진로진학설명회 · 전공지식공유발표</li><li>전공적합검사 · 1:1 진로진학 컨설팅(학생·학부모)</li><li>졸업생 학과 멘토링 · 동기강화 · 대학별 입시 설명회</li><li>전문 직업인 멘토 · 대학 입학전형 1:1 모의 면접</li></ul><h4>드림하이 대학생 멘토링</h4><ul><li>졸업생 멘토가 교과 질의응답, 학습·생활 상담, 공부 노하우 공유</li><li>월~금 18:00~21:00 / 4층 자기주도학습실</li></ul>"],
+["🎓 2026학년도 학생부종합전형 합격사례","<ul><li><b>S대 수학교육과</b> – 융합과학탐구, 창의탐구반, 진로독서·미래창업 프로젝트</li><li><b>K대 동물자원식품과학유통학부</b> – 과학·실험탐구 동아리, 수의학 관련 심화 탐구</li><li><b>J대 경제학부</b> – 사회적 경제 창업 발표, 경제·금융 진로탐구 프로젝트</li></ul>"],
+["🔭 2028 대입 · 서울대 전형(설명회 자료)","<h4>2026 기준 → 2028 예상</h4><ul><li>수능: 표준점수 → 등급·백분위 활용</li><li>수능 최저(지균 등): 존재 → 폐지</li><li>수시 지역균형 추천: 학교당 2명 → 3명 이내</li><li>수시 면접: SNU 역량평가 면접 도입</li><li>정시 교과평가: 교과역량평가 40% 반영</li><li>정시 일반 1단계: 2배수 → 3배수</li></ul><h4>수시 · 정시 운영(안)</h4><ul><li>수시: 모두 학종, 1단계 서류 → 2단계 서류+면접(지역균형 70+30, 일반 100+100)</li><li>정시: 수능 + 교과역량평가(수능 60 + 교과 40)</li></ul><h4>3대 핵심 평가 역량</h4><ul><li>종합적 사고 · 창의 탐구 · 공동체 역량</li></ul>"],
+["📝 대입 전형 유형","<ul><li>학생부교과: 교과성적 + 수능최저</li><li>학생부종합: 교과성적 + 교과활동 + 수능최저(일부)</li><li>논술: 교과역량 + 논술역량 + 수능최저</li><li>수능: 수능성적 + 교과역량</li><li>실기/실적: 주로 예체능 분야 선발</li></ul>"],
+["🎓 고교학점제 · 성적 기재","<ul><li>7단계: 과목 개설 → 진로·학업설계 → 수강신청 → 수업운영 → 학점평가 → 이수기준(출석 2/3 이상, 학업성취율 40% 이상) → 졸업</li><li>미이수 시 보충 프로그램 제공</li><li>전 과목 성취도 5단계, 석차등급 5등급</li><li>원점수·과목평균 기재, 표준편차 미기재</li><li>융합선택과목(사회·과학)은 석차등급 없이 성취도만 기재</li><li>공동교육과정은 5명 이내 소인수 강좌, 석차등급 미산출</li></ul>"],
+["🏆 2026 대입 합격 현황","<ul><li>의대 2, 연세대 2, 고려대 3, 성균관대 7, 서강대 4, 한양대 5</li><li>중앙대 8, 경희대 6, 한국외대 4, 이화여대 6, 건국대 7, 동국대 5, 홍익대 10, 숭실대 10</li><li>인하대 14, 인천대 13, 국민대 6, 숙명여대 5, 아주대 3, 가천대 4</li><li>지역거점 국립대 46, 지방 사립대 70</li></ul>"],
+["💼 AI 시대 직업 선택","<ul><li><b>창출:</b> AI·머신러닝 전문가, 데이터 분석가, 정보보안 분석가, 로보틱스 엔지니어, 핀테크 엔지니어, 빅데이터 전문가 등</li><li><b>감소:</b> 데이터 입력·행정·회계 사무원, 출납원, 우체국·은행 사무원 등</li><li>출처: 세계경제포럼(2023) 직업의 미래 설문조사</li></ul>"],
+["📵 폰프리 프로그램(RAS)","<ul><li><b>R</b> 독서·성찰: 숨은 우리말 찾기, 사우 골든벨</li><li><b>A</b> 예술·창의: 벚꽃 사진전, 마스코트 공모전, 릴스대회</li><li><b>S</b> 신체·소통: 사이좋은 사우 스티커, 칭찬 아카이브, 응원 우체통</li></ul>"]];
+const CL={"과학":"과학의 품격,과학탐구,뉴런,바쎄,피케,요리조리","인문·사회":"또바기,시나브로,시비타스,아리솔,유스티치아,인어스,혜윰늘,소설로 세상 읽기,히스토리아,새빛도서반","예체능":"그리다,라온누리,러너스,인앤콕,태권도,팬텀부,클로젯,스크립트","진로·융합":"글로벌 진로탐구반,인사이트,메아리,미드영어,스토리움,스티칭,팔레트,플루토,하랑,에어하이,에코온,메디메디피아","AI융합":"크리에이티브 온,퓨처 메이커스","3학년":"메디믹스,엔지니어랩 1·2,세모공,사유의 숲,꿈틀,진로독서,진로나침반,진로신문만들기,다독다독카페,북유니버스,미래직업탐구"};
+const $=i=>document.getElementById(i);let tab=0,qc="전체",cc="과학";
+const T=[["🏠","홈"],["💬","Q&A"],["📘","브로셔"],["🎯","동아리"]];
+$("nav").innerHTML=T.map((t,i)=>`<button data-t="${i}"><i>${t[0]}</i>${t[1]}</button>`).join("");
+function go(i,c){tab=i;document.querySelectorAll(".tab").forEach((e,j)=>e.classList.toggle("on",j===i));document.querySelectorAll("#nav button").forEach((e,j)=>e.classList.toggle("on",j===i));if(c){qc=c;pills();qa()}scrollTo(0,0)}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-t]");if(b)go(+b.dataset.t,b.dataset.c)});
+const QC=["전체",...new Set(QA.map(q=>q[0]))];
+function pills(){$("pills").innerHTML=QC.map(c=>`<button class="pill${c===qc?" on":""}" data-q="${c}">${c}</button>`).join("")}
+function qa(){const k=$("s").value.trim().toLowerCase();const r=QA.filter(q=>(qc==="전체"||q[0]===qc)&&(!k||(q[1]+q[2]).toLowerCase().includes(k)));
+$("qa").innerHTML=r.length?r.map(q=>`<details><summary>${q[1]}</summary><div class="ans">${q[2]}</div></details>`).join(""):'<p class="foot">검색 결과가 없어요.</p>'}
+$("pills").onclick=e=>{const c=e.target.dataset.q;if(c){qc=c;pills();qa()}};$("s").oninput=qa;
+$("br").innerHTML=BR.map((b,i)=>`<details${i===0?" open":""}><summary>${b[0]}</summary><div class="ans">${b[1]}</div></details>`).join("");
+function clubs(){$("cp").innerHTML=Object.keys(CL).map(c=>`<button class="pill${c===cc?" on":""}" data-k="${c}">${c}</button>`).join("");$("cl").innerHTML=CL[cc].split(",").map(n=>`<span class="chip">${n}</span>`).join("")}
+$("cp").onclick=e=>{const c=e.target.dataset.k;if(c){cc=c;clubs()}};
+const IDX=[];
+QA.forEach((q,i)=>IDX.push({tag:"입학 Q&A",t:q[1],x:q[2],tab:1,i}));
+BR.forEach((b,i)=>{const d=document.createElement("div");d.innerHTML=b[1];const n=b[0].replace(/^\S+\s/,"");d.querySelectorAll("li").forEach(l=>IDX.push({tag:"브로셔·설명회 자료",t:n,x:l.textContent,tab:2,i,h:1}))});
+Object.entries(CL).forEach(([k,v])=>IDX.push({tag:"동아리",t:"동아리 "+k,x:v.split(",").join(", "),tab:3,k}));
+IDX.push({tag:"일정",t:"입학설명회·고입전형 일정",x:"입학설명회 2026.11.25.(수) 18:00 사우고 강당 (관내 중3 학부모 및 학생)\n원서접수 2026.12.04(금)~12.10(목) 17:00까지\n전형기간 2026.12.11(금)\n합격자 발표 2026.12.14(월) 이내",tab:0});
+IDX.push({tag:"학교 정보",t:"주소·전화·팩스·홈페이지",x:"경기 김포시 김포대로 824 (10111) / TEL 031-985-3421 / FAX 031-997-2397 / sawoo-h.gpoe.kr",tab:0});
+const AL={"대입":"입시 전형 대학","입시":"대입 전형","서울대":"서울대학교 SNU","학점제":"고교학점제","직업":"AI 시대 직업","합격현황":"합격 현황","야자":"드림하이","자습":"자기주도학습","언제":"일정","날짜":"일정","원서":"원서접수","설명회":"입학설명회","위치":"주소 김포대로","주소":"김포대로","전화":"TEL 연락처","연락":"TEL","멘토":"멘토링","일본":"국제교류 소자미나미","해외":"국제교류","코딩":"AI 앱 프로그래밍","창업":"모의창업","면접":"모의면접","선택과목":"선택 교육과정","학점제":"선택 교육과정","합격":"합격사례","대학":"진학 합격사례"};
+const ST=new Set(["알려줘","알려주세요","어떻게","어떤","뭐가","무엇","있나","있어","해야","꼭","그리고","관련","대해","궁금"]);
+function srch(){const raw=$("gs").value.trim();document.body.classList.toggle("srch",!!raw);if(!raw){$("gr").innerHTML="";return}
+let q=raw.toLowerCase();for(const k in AL)if(q.includes(k))q+=" "+AL[k];
+const ws=[...new Set(q.replace(/[?.,!~()]/g," ").split(/\s+/).map(w=>w.replace(/(인가요|있나요|어떤가요|어때요|해요|하나요|이에요|예요|나요|은|는|이|가|을|를|에|의|도|로|와|과|요)$/,"")).filter(w=>w.length>1&&!ST.has(w)))];
+const sc=IDX.map(d=>{const t=d.t.toLowerCase(),x=d.x.toLowerCase();let s=0;ws.forEach(w=>{if(t.includes(w))s+=8;if(x.includes(w))s+=5;for(let i=0;i<w.length-1;i++){const b=w.slice(i,i+2);if(t.includes(b))s+=1;if(x.includes(b))s+=.7}});return[s,d]}).filter(r=>r[0]>=6).sort((a,b)=>b[0]-a[0]).slice(0,7);
+$("gr").innerHTML=`<p class="foot" style="text-align:left">‘${raw.replace(/</g,"&lt;")}’ 검색 결과 ${sc.length}건</p>`+(sc.length?sc.map(([s,d])=>`<div class="card res" data-tab="${d.tab}" data-i="${d.i??""}" data-k="${d.k??""}"><small>${d.tag}${d.h?" · "+d.t:""}</small>${d.h?"":`<b>${d.t}</b>`}<p>${d.x}</p><span>원문 보기 ›</span></div>`).join(""):'<div class="card">관련 내용을 찾지 못했어요. 다른 단어로 물어보시거나 학교(031-985-3421)로 문의해 주세요.</div>')}
+$("gs").oninput=srch;
+$("gx").onclick=()=>{$("gs").value="";srch()};
+document.querySelector(".ex").onclick=e=>{if(e.target.tagName==="BUTTON"){$("gs").value=e.target.textContent;srch();scrollTo(0,0)}};
+$("gr").onclick=e=>{const c=e.target.closest(".res");if(!c)return;const t=+c.dataset.tab,i=c.dataset.i;$("gs").value="";srch();go(t);
+if(t===1){qc="전체";$("s").value="";pills();qa();const el=$("qa").children[i];el.open=true;el.scrollIntoView({block:"center"})}
+if(t===2){const el=$("br").children[i];el.open=true;el.scrollIntoView({block:"start"})}
+if(t===3){cc=c.dataset.k;clubs()}};
+pills();qa();clubs();go(0);
+</script></body></html>
